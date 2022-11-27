@@ -1,27 +1,30 @@
 package Seminar_2;
 
+import java.util.Random;
+
 public class Homework {
 
-    static Employee generateEmploeyee(){
+    public static String[] names = new String[] { "Анатолий", "Глеб", "Клим", "Мартин", "Лазарь", "Владлен", "Клим", "Панкратий", "Рубен", "Герман" };
+    public static String[] surnames = new String[] { "Григорьев", "Фокин", "Шестаков", "Хохлов", "Шубин", "Бирюков", "Копылов", "Горбунов", "Лыткин", "Соколов" };
 
-        //  String[] names = new String[] { "Анатолий", "Глеб", "Клим", "Мартин", "Лазарь", "Владлен", "Клим", "Панкратий", "Рубен", "Герман" };
-        //  String[] surnames = new String[] { "Григорьев", "Фокин", "Шестаков", "Хохлов", "Шубин", "Бирюков", "Копылов", "Горбунов", "Лыткин", "Соколов" };
+    public static Employee generateEmploeyee(){
 
+        Random random = new Random();
+        int randType = random.nextInt(0, EmployeeType.values().length);
 
-        //TODO: Доработать самостоятельно.
-        return  null;
+        return switch (randType){
+            case 0 -> new Worker(names[random.nextInt(0, names.length - 1)],
+                                surnames[random.nextInt(0, surnames.length - 1)],
+                                random.nextDouble(0, 150000));
+            case 1 -> new Freelancer(names[random.nextInt(0, names.length - 1)],
+                                surnames[random.nextInt(0, surnames.length - 1)],
+                                random.nextDouble(0, 1500));
+            default -> throw new IllegalStateException("Unexpected value: " + randType);
+        };
     }
 
 
     public static void main(String[] args) {
-
-        Worker worker1 = new Worker("Анатолий", "Шестанов", 70000);
-        System.out.println(worker1);
-
-        //TODO: Домашняя работа
-        // 1. Доработать метод generateEmploeyee(), вернуть сотрудника определенного типа.
-        // 2***. Метод generateEmploeyee() должен быть без входных параметров, тип сотрудника,
-        // фио и ставка генерируются автоматически.
 
         Employee[] employees = new Employee[10];
         for (int i = 0; i < employees.length; i++){
@@ -35,7 +38,10 @@ public class Homework {
     }
 
 }
-
+enum EmployeeType {
+    WORKER,
+    FREELANCER
+        }
 /**
  * Работник (базовый класс)
  */
@@ -78,6 +84,9 @@ abstract class Employee {
         this.salary = salary;
     }
 
+    public Employee() {
+    }
+
     /**
      * Расчет среднемесячной заработной платы
      * @return
@@ -90,6 +99,9 @@ class Freelancer extends Employee{
 
     public Freelancer(String name, String surname, double salary) {
         super(name, surname, salary);
+    }
+
+    public Freelancer() {
     }
 
     @Override
@@ -108,6 +120,9 @@ class Worker extends Employee{
 
     public Worker(String name, String surname, double salary) {
         super(name, surname, salary);
+    }
+
+    public Worker() {
     }
 
     @Override
