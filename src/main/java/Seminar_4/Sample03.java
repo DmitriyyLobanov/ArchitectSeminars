@@ -1,8 +1,9 @@
-package ru.geekbrains.lesson4;
+package Seminar_4;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+import java.util.Random;
 
 public class Sample03 {
 
@@ -29,7 +30,7 @@ public class Sample03 {
         mobileApp.searchTicket(new Date());
         mobileApp.buyTicket("1000000000000044");
 
-        BusStation busStation = new BusStation();
+        BusStation busStation = new BusStation(core.getTicketProvider());
 
     }
 
@@ -241,29 +242,88 @@ class MobileApp{
  */
 class BusStation{
 
-    //TODO: ДОМАШНЯЯ РАБОТА
-    // 1. Доработать модуль BusStation
-    // 2. Переработать любой модуль, например TicketProvider, в рамках соответствия принципу контрактно-ориентированного программирования.
+    private TicketProvider ticketProvider;
 
+    public BusStation(TicketProvider ticketProvider) {
+        this.ticketProvider = ticketProvider;
+    }
+
+    public TicketProvider getTicketProvider() {
+        return ticketProvider;
+    }
+
+    public void setTicketProvider(TicketProvider ticketProvider) {
+        this.ticketProvider = ticketProvider;
+    }
+
+    /***
+     * Метод приветствующий клиента, либо, изгоняющий самозванца.
+     * @param qrCode QR-код билета
+     */
+    public void boardingPassenger(String qrCode){
+        if (ticketProvider.checkTicket(qrCode)){
+            System.out.println("Welcome!");
+        }else {
+            System.out.println("Don't waste my time! Get out!");
+        }
+    }
 }
 
+interface PaymentMaster{
+    public boolean contractOrientedBuy(int orderId, String cardNo, double amount);
 
-class PaymentProvider{
+}
+class PaymentProvider implements PaymentMaster{
 
     public boolean buy(int orderId, String cardNo, double amount) {
        return true;
     }
 
+    /***
+     *
+     * @param orderId id заказа //TODO реализовать сущность "Заказ"
+     * @param cardNo номер банковской карты клиента
+     * @param amount стоимость билета
+     * @return true в случае успешной транзакции
+     */
+    @Override
+    public boolean contractOrientedBuy(int orderId, String cardNo, double amount) {
+        ProcessingCompany pc = new ProcessingCompany();
+
+        if (orderId <= 0) {
+            throw new RuntimeException("Невалидный id заказа!");
+        }if (!checkCardNumber(cardNo)){
+            throw  new RuntimeException("Несуществующий номер карты!");
+        }
+
+        try {
+            pc.sendPayment();
+            return true;
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
+        pc.disconnect();
+        return false;
+    }
+    private boolean checkCardNumber(String cardNumber){
+        Random random = new Random();
+        return random.nextBoolean();
+    }
 }
 
 
-class ProcessingCompany{
+class ProcessingCompany {
 
     private Collection<Bank> banks = new ArrayList<>();
+    public void sendPayment(){}
+    public void disconnect(){}
 
 }
 
 
-class Bank{
+
+class Bank {
+
 
 }
