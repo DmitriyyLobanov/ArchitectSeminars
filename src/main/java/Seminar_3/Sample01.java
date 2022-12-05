@@ -1,4 +1,4 @@
-package ru.geekbrains.seminar3;
+package Seminar_3;
 
 import java.awt.*;
 
