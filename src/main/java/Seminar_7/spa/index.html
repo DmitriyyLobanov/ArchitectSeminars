@@ -1,0 +1,63 @@
+<!--
+
+    ДОМАШНЯЯ РАБОТА
+
+    Необходимо спроектировать сервис отчётов для компании оптовой торговли.
+
+    а. Доменная модель (компания, товарные категории, табличный отчёт, 
+        рафики и диаграммы, финансовые показатели, ..), в виде текста Домен – атрибуты.
+    b. Сформировать компоненты бизнес-логики (функциональные) необходимые для построения этих отчётов. 
+-->
+
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Single Page Application Sample</title>
+        <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    </header>
+    <body>
+        <div class="container" >
+
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/">SPA Sample</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" onclick="route()" href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" onclick="route()" href="/settings">Settings</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" onclick="route()" href="/about">About</a>
+                      </li>
+                    </ul>
+       
+                  </div>
+                </div>
+              </nav>
+            
+            <div id="main-page"></div>
+
+        </div>
+
+
+        <!--<h1>Hello, GeekBrains!</h1>
+        <a href="/" onclick="route()" >Main</a>
+        <a href="/settings" onclick="route()" >Settings</a>
+        <a href="/about"  onclick="route()">About</a>-->
+        <!--<p>Hello</p>
+        <a href="#">Click to hide me too</a>-->
+
+
+        <script src="/lib/jquery/jquery.js"></script>
+        <script src="/lib/bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="/js/router.js"></script>
+        
+        
+    </body>
+</html>
