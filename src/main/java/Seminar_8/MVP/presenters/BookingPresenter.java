@@ -1,6 +1,6 @@
-package ru.geekbrains.lesson8.MVP.presenters;
+package Seminar_8.MVP.presenters;
 
-import ru.geekbrains.lesson8.MVP.models.Table;
+import Seminar_8.MVP.models.Table;
 
 import java.util.Collection;
 import java.util.Date;

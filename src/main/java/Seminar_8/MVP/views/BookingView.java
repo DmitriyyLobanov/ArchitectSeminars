@@ -1,8 +1,8 @@
-package ru.geekbrains.lesson8.MVP.views;
+package Seminar_8.MVP.views;
 
-import ru.geekbrains.lesson8.MVP.models.Table;
-import ru.geekbrains.lesson8.MVP.presenters.View;
-import ru.geekbrains.lesson8.MVP.presenters.ViewObserver;
+import Seminar_8.MVP.models.Table ;
+import Seminar_8.MVP.presenters.View ;
+import Seminar_8.MVP.presenters.ViewObserver ;
 
 import java.util.Collection;
 import java.util.Date;

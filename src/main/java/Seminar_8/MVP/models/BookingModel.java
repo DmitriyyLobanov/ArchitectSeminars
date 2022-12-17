@@ -1,6 +1,6 @@
-package ru.geekbrains.lesson8.MVP.models;
+package Seminar_8.MVP.models;
 
-import ru.geekbrains.lesson8.MVP.presenters.Model;
+import Seminar_8.MVP.presenters.Model ;
 
 import java.util.ArrayList;
 import java.util.Collection;

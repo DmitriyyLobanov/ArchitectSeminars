@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson8.MVP.models;
+package Seminar_8.MVP.models;
 
 import java.util.ArrayList;
 import java.util.Collection;

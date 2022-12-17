@@ -1,8 +1,8 @@
-package ru.geekbrains.lesson8;
+package Seminar_8;
 
-import ru.geekbrains.lesson8.MVP.models.BookingModel;
-import ru.geekbrains.lesson8.MVP.presenters.BookingPresenter;
-import ru.geekbrains.lesson8.MVP.views.BookingView;
+import Seminar_8.MVP.models.BookingModel ;
+import Seminar_8.MVP.presenters.BookingPresenter ;
+import Seminar_8.MVP.views.BookingView ;
 
 import java.util.Date;
 
