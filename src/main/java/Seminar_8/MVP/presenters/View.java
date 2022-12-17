@@ -8,6 +8,6 @@ public interface View {
 
     void showTables(Collection<Table> tables);
     void setObserver(ViewObserver observer);
-    void printReservationTableResult(int reservationNo);
+    void printReservationTableResult(int reservationNo, String name);
 
 }
