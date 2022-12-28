@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "NSR8CkBjqCJABMYvi/unwb0q1WRGpwTDMBkTZ/5htYg=",
+  "Source": "PetClinicService",
+  "BasePath": "_content/PetClinicService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
