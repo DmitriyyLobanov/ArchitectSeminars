@@ -1,15 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PetClinicService.Models;
-using PetClinicService.Models.Requests;
+using PetClinicService.Models.Requests.ClientRequests;
 using PetClinicService.Services;
 
 namespace PetClinicService.Controllers
 {
 
-    /// <summary>
-    /// ДОМАШНЯЯ РАБОТА Добавить контроллеры PetController и ConsultationController по образу и подобию текущего контроллера.
-    /// </summary>
+
 
     [Route("api/[controller]")]
     [ApiController]
