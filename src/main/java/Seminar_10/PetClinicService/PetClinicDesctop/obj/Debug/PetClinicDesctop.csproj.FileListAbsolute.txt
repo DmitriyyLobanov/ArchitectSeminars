@@ -1,0 +1,14 @@
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\bin\Debug\PetClinicDesctop.exe.config
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\bin\Debug\PetClinicDesctop.exe
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\bin\Debug\PetClinicDesctop.pdb
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\obj\Debug\PetClinicDesctop.csproj.AssemblyReference.cache
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\obj\Debug\PetClinicDesctop.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\obj\Debug\PetClinicDesctop.Properties.Resources.resources
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\obj\Debug\PetClinicDesctop.csproj.GenerateResource.cache
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\obj\Debug\PetClinicDesctop.csproj.CoreCompileInputs.cache
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\obj\Debug\PetClinicDesctop.exe
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\obj\Debug\PetClinicDesctop.pdb
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\obj\Debug\PetClinicDesctop.MainForm.resources
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dmitriy\Desktop\GeekBrains\architect\ArchitectSeminars\src\main\java\Seminar_10\PetClinicService\PetClinicDesctop\obj\Debug\PetClinicDesctop.csproj.CopyComplete
