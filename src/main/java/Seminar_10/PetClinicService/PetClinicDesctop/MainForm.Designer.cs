@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.listViewClients = new System.Windows.Forms.ListView();
-            this.buttonLoadClients = new System.Windows.Forms.Button();
             this.columnHeaderId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderSurName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderFirstName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderPatronymic = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.buttonLoadClients = new System.Windows.Forms.Button();
+            this.columnHeaderBirthday = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderDocument = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // listViewClients
@@ -45,7 +47,9 @@
             this.columnHeaderId,
             this.columnHeaderSurName,
             this.columnHeaderFirstName,
-            this.columnHeaderPatronymic});
+            this.columnHeaderPatronymic,
+            this.columnHeaderBirthday,
+            this.columnHeaderDocument});
             this.listViewClients.FullRowSelect = true;
             this.listViewClients.GridLines = true;
             this.listViewClients.HideSelection = false;
@@ -57,20 +61,10 @@
             this.listViewClients.UseCompatibleStateImageBehavior = false;
             this.listViewClients.View = System.Windows.Forms.View.Details;
             // 
-            // buttonLoadClients
-            // 
-            this.buttonLoadClients.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLoadClients.Location = new System.Drawing.Point(659, 321);
-            this.buttonLoadClients.Name = "buttonLoadClients";
-            this.buttonLoadClients.Size = new System.Drawing.Size(129, 41);
-            this.buttonLoadClients.TabIndex = 1;
-            this.buttonLoadClients.Text = "Загрузить";
-            this.buttonLoadClients.UseVisualStyleBackColor = true;
-            this.buttonLoadClients.Click += new System.EventHandler(this.buttonLoadClients_Click);
-            // 
             // columnHeaderId
             // 
             this.columnHeaderId.Text = "#";
+            this.columnHeaderId.Width = 30;
             // 
             // columnHeaderSurName
             // 
@@ -86,6 +80,27 @@
             // 
             this.columnHeaderPatronymic.Text = "Отчество";
             this.columnHeaderPatronymic.Width = 200;
+            // 
+            // buttonLoadClients
+            // 
+            this.buttonLoadClients.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLoadClients.Location = new System.Drawing.Point(659, 321);
+            this.buttonLoadClients.Name = "buttonLoadClients";
+            this.buttonLoadClients.Size = new System.Drawing.Size(129, 41);
+            this.buttonLoadClients.TabIndex = 1;
+            this.buttonLoadClients.Text = "Загрузить";
+            this.buttonLoadClients.UseVisualStyleBackColor = true;
+            this.buttonLoadClients.Click += new System.EventHandler(this.buttonLoadClients_Click);
+            // 
+            // columnHeaderBirthday
+            // 
+            this.columnHeaderBirthday.Text = "День рождения";
+            this.columnHeaderBirthday.Width = 100;
+            // 
+            // columnHeaderDocument
+            // 
+            this.columnHeaderDocument.Text = "Документ";
+            this.columnHeaderDocument.Width = 80;
             // 
             // MainForm
             // 
@@ -110,6 +125,8 @@
         private System.Windows.Forms.ColumnHeader columnHeaderSurName;
         private System.Windows.Forms.ColumnHeader columnHeaderFirstName;
         private System.Windows.Forms.ColumnHeader columnHeaderPatronymic;
+        private System.Windows.Forms.ColumnHeader columnHeaderBirthday;
+        private System.Windows.Forms.ColumnHeader columnHeaderDocument;
     }
 }
 

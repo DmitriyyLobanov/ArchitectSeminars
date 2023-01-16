@@ -40,6 +40,14 @@ namespace PetClinicDesctop
                 {
                     Text = client.Patronymic
                 });
+                item.SubItems.Add(new ListViewItem.ListViewSubItem()
+                {
+                    Text = client.Birthday.ToString()
+                });
+                item.SubItems.Add(new ListViewItem.ListViewSubItem()
+                {
+                    Text = client.Document
+                });
                 listViewClients.Items.Add(item);
             }
         }
