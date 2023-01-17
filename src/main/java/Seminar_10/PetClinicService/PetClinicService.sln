@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetClinicService", "PetClin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetClinicDesctop", "PetClinicDesctop\PetClinicDesctop.csproj", "{E558E079-0B6E-4FD5-82D6-ABEBBC60975F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetClinicTests", "PetClinicTests\PetClinicTests.csproj", "{CDEEB910-DF22-476E-8BC1-B7EF485F2C94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E558E079-0B6E-4FD5-82D6-ABEBBC60975F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E558E079-0B6E-4FD5-82D6-ABEBBC60975F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E558E079-0B6E-4FD5-82D6-ABEBBC60975F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDEEB910-DF22-476E-8BC1-B7EF485F2C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDEEB910-DF22-476E-8BC1-B7EF485F2C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDEEB910-DF22-476E-8BC1-B7EF485F2C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDEEB910-DF22-476E-8BC1-B7EF485F2C94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
