@@ -7,7 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using PetClinicService.Controllers;
 using PetClinicService.Models;
+using PetClinicService.Models.Requests.ClientRequests;
 using PetClinicService.Services;
+using PetClinicService.Services.Impl;
+
 
 namespace PetClinicTests
 {
@@ -43,5 +46,42 @@ namespace PetClinicTests
 
             _mockClientRepository.Verify(repository => repository.GetAll(),Times.Once);
         }
+
+        // не удалось получить 1 в operationResult, тест не проходит по equal
+        // не получилось получить подтверждение от "заглушки" что объект создавался.
+        // дайте пожалуйста подсказку и я доделаю тесты.
+        [Fact]
+        public void CreateClientsTest() 
+        {
+
+            CreateClientRequest createClientRequest = new CreateClientRequest();
+
+            createClientRequest.FirstName = "Test";
+            createClientRequest.SurName = "Test";
+            createClientRequest.Patronymic = "Test";
+            createClientRequest.Document = "Test";
+            createClientRequest.Birthday = DateTime.Now;
+
+            _mockClientRepository.Setup(repository => repository.Create(new Client 
+            { 
+                FirstName = createClientRequest.FirstName,
+                SurName = createClientRequest.SurName,
+                Patronymic = createClientRequest.Patronymic,
+                Document= createClientRequest.Document,
+                Birthday = createClientRequest.Birthday
+            }));
+
+
+            ActionResult<int> operationResult = _clientController.Create(createClientRequest);
+
+            int expectedOperationValue = 1;
+
+            Assert.IsType<OkObjectResult>(operationResult.Result);
+            Assert.IsAssignableFrom<Client>((OkObjectResult)operationResult.Result);
+            Assert.Equal<int>(expectedOperationValue, (int)((OkObjectResult)operationResult.Result).Value);
+        }
+
+
+
     }
 }
